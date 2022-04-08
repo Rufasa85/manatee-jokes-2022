@@ -1,16 +1,19 @@
-
 let setUpEL = document.querySelector("#setUp");
 let punchLineEL = document.querySelector("#punchLine");
+let jokeBtn = document.querySelector("#getJoke");
 
-fetch('https://manateejokesapi.herokuapp.com/manatees/random')
-  .then(response => response.json())
-  .then(data => {
+function getRandomJoke() {
+  fetch("https://manateejokesapi.herokuapp.com/manatees/random")
+    .then((response) => response.json())
+    .then((data) => {
       console.log(data);
-       //disaply setup clicked
-      setUpEL.textContent = data.setup
-      punchLineEL.textContent = data.punchline
-  });
+      //disaply setup clicked
+      setUpEL.textContent = data.setup;
+      punchLineEL.textContent = data.punchline;
+    });
+}
 
+jokeBtn.addEventListener("click", getRandomJoke);
 
-console.log("linked!")
-
+getRandomJoke();
+console.log("linked!");
