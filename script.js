@@ -1,3 +1,4 @@
+
 let setUpEL = document.querySelector("#setUp");
 let punchLineEL = document.querySelector("#punchLine");
 let setUpBtnEl = document.querySelector("#setUpBtn")
@@ -19,6 +20,6 @@ fetch('https://manateejokesapi.herokuapp.com/manatees/random')
       punchLineEL.textContent = data.punchline
   });
 
- 
 
+console.log("linked!")
 

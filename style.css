@@ -1,0 +1,22 @@
+body {
+    min-height:100vh;
+    background:linear-gradient(120deg, deepskyblue 0%, deepskyblue 50%, deeppink 50%);
+    font-family:"Comic Sans MS", cursive
+}
+h1 {
+    text-align:center;
+}
+
+p {
+    text-align: center;
+    font-size:36px;
+}
+
+#jokeDisplay {
+    width:50vw;
+    margin:0 auto;
+    background: salmon;
+    border-radius: 20px 0;
+    border:1px solid black;
+    box-shadow: 10px 10px 10px 2px black;
+}
